@@ -7,8 +7,8 @@ public class GatlingResultsToDatabase {
 
     // JDBC URL, username, and password of PostgreSQL server
     private static final String JDBC_URL = "jdbc:postgresql://localhost:5432/mdd";
-    private static final String JDBC_USER = "postgres";
-    private static final String JDBC_PASSWORD = "postgres";
+    private static final String JDBC_USER = "onepoint_user";
+    private static final String JDBC_PASSWORD = "1234";
 
     public static Connection connection() throws SQLException, ClassNotFoundException {
         try {
