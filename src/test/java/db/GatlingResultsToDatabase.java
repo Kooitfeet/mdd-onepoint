@@ -52,7 +52,7 @@ public class GatlingResultsToDatabase {
         // SQL query to insert data into the test_results table
         Connection connection = connection();
 
-        String insertQuery = "INSERT INTO table_onepoint (\"timestamp\", \"fetch\", code_http, step) VALUES (?, ?, ?, ?)";
+        String insertQuery = "INSERT INTO table_onepoint (\"timesTamp\", \"fetchs\", code_http, step) VALUES (?, ?, ?, ?)";
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
             preparedStatement.setTimestamp(1, timestamp);
