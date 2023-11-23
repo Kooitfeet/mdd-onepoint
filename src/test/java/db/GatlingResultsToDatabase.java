@@ -27,7 +27,7 @@ public class GatlingResultsToDatabase {
         // SQL query to insert data into the test_results table
         Connection connection = connection();
 
-        String insertQuery = "INSERT INTO test_results (scenario_name, request_name, request_count, min_response_time, max_response_time, mean_response_time, status) " +
+        String insertQuery = "INSERT INTO table_onepoint (scenario_name, request_name, request_count, min_response_time, max_response_time, mean_response_time, status) " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
